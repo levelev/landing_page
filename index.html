@@ -9,11 +9,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
   <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Pacifico|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-
   <!-- Material Kit CSS -->
   <link rel="stylesheet" href="https://levelev.github.io/landing_page/assets/css/material-kit.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 
 
 
@@ -22,7 +23,8 @@
   <nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="../index.html">InstaMentor </a>
+        <a class="navbar-brand" href="../index.html"><img src="https://levelev.github.io/landing_page/img/graduate-cap.svg" alt="InstaMentor Logo" height="40px">
+        InstaMentor </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           <span class="navbar-toggler-icon"></span>
@@ -293,23 +295,23 @@
               </div>
               <div class="card-body">
                 <div class="form-group label-floating is-empty">
-                  <label class="bmd-label-floating">Your name</label>
-                  <input id="name" type="text" name="name" class="form-control">
+                  <label class="bmd-label-floating">Your name*</label>
+                  <input id="name" type="text" name="name" class="form-control" required>
                   <span class="material-input"></span>
                 </div>
                 <div class="form-group label-floating is-empty">
-                  <label class="bmd-label-floating">Email address</label>
-                  <input id="email" type="email" name="email" class="form-control">
+                  <label class="bmd-label-floating">Email address*</label>
+                  <input id="email" type="email" name="email" class="form-control" required>
                   <span class="material-input"></span>
                 </div>
                 <div class="form-group label-floating is-empty">
-                  <label  class="bmd-label-floating">Phone number</label>
-                  <input id="phone" type="tel" name="number" class="form-control">
+                  <label  class="bmd-label-floating">Phone number*</label>
+                  <input id="phone" type="tel" name="number" class="form-control" required>
                   <span class="material-input"></span>
                 </div>
                 <div class="form-group label-floating is-empty">
-                  <label for="exampleMessage1" class="bmd-label-floating">Your Message</label>
-                  <textarea id="message" name="message" class="form-control" id="exampleMessage1" rows="6"></textarea>
+                  <label for="exampleMessage1" class="bmd-label-floating">Your Message*</label>
+                  <textarea id="message" name="message" class="form-control" id="exampleMessage1" rows="6" required></textarea>
                   <span class="material-input"></span>
                 </div>
               </div>
@@ -362,7 +364,7 @@
         ©
         <script>
           document.write(new Date().getFullYear())
-        </script>, made with <i class="material-icons">favorite</i> by InstaMentor for a better learning.
+        </script>, made with <i class="material-icons">favorite</i> by <span class="pacifico">InstaMentor</span> for a better learning.
       </div>
     </div>
   </footer>
