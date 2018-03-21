@@ -15,6 +15,8 @@
   <!-- Material Kit CSS -->
   <link rel="stylesheet" href="https://levelev.github.io/landing_page/assets/css/material-kit.css">
 
+
+
 </head>
 <body class="landing-page ">
   <nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
@@ -285,31 +287,29 @@
         </div>
         <div class="col-md-5 ml-auto">
           <div class="card card-contact">
-            <form id="contactform" method="post" action="https://hooks.zapier.com/hooks/catch/1736486/kklcjd/silent/" target="dummyframe">
+            <form id="ajax-contact" method="post" action="https://hooks.zapier.com/hooks/catch/1736486/kklcjd/">
               <div class="card-header card-header-raised card-header-primary text-center">
                 <h4 class="card-title">Contact Us</h4>
               </div>
               <div class="card-body">
-
                 <div class="form-group label-floating is-empty">
                   <label class="bmd-label-floating">Your name</label>
-                  <input type="text" name="name" class="form-control">
+                  <input id="name" type="text" name="name" class="form-control">
                   <span class="material-input"></span>
                 </div>
-
                 <div class="form-group label-floating is-empty">
                   <label class="bmd-label-floating">Email address</label>
-                  <input type="email" name="email" class="form-control">
+                  <input id="email" type="email" name="email" class="form-control">
                   <span class="material-input"></span>
                 </div>
                 <div class="form-group label-floating is-empty">
-                  <label class="bmd-label-floating">Phone number</label>
-                  <input type="tel" name="phone" class="form-control">
+                  <label  class="bmd-label-floating">Phone number</label>
+                  <input id="phone" type="tel" name="number" class="form-control">
                   <span class="material-input"></span>
                 </div>
                 <div class="form-group label-floating is-empty">
                   <label for="exampleMessage1" class="bmd-label-floating">Your Message</label>
-                  <textarea name="message" class="form-control" id="exampleMessage1" rows="6"></textarea>
+                  <textarea id="message" name="message" class="form-control" id="exampleMessage1" rows="6"></textarea>
                   <span class="material-input"></span>
                 </div>
               </div>
@@ -326,16 +326,12 @@
                 <button type="submit" class="btn btn-primary pull-right" style="width: 90%;">Send Message</button>
               </div>
             </form>
-            <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
-
           </div>
         </div>
       </div>
     </div>
-
   </div>
   <!--     *********    END CONTACT US 1      *********      -->
-
   <footer class="footer">
     <div class="container">
       <nav class="float-left">
@@ -400,6 +396,10 @@
 
   <!-- Material Kit Core initialisations of plugins and Bootstrap Material Design Library -->
   <script src="https://levelev.github.io/landing_page/assets/js/material-kit.js?v=2.0.0"></script>
+
+
+  <!-- Custom JS for LandingPage -->
+  <script src="app.js"></script>
 
 
 </body>
